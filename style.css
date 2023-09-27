@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap');
+@import url("http://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap");
+
+* {
+    padding: 0;
+    margin: 0;
+    background: linear-gradient();
+}
+
+body {
+    background-color: #161626;
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(#2193b0, #6dd5ed);
+    clip-path: circle(30% at right 70%);
+    z-index: -1;
+}
+
+body::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(#ee9ca7, #ffdde1);
+    clip-path: circle(20% at 10% 10%);
+    z-index: -1;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 30vh;
+}
+
+h1 {
+    font-family: 'Yeseva One', cursive;
+    font-size: 80px;
+    color: rgb(203, 115, 22);
+}
+
+#books-container {
+    display: flex;
+    height: 45vh;
+    width: 100%;
+    overflow: auto;
+    gap: 100px;
+    font-family: "Poppins";
+}
+
+.b-card {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100vw;
+    flex-grow: 0;
+    flex-shrink: 0;
+    max-width: 330px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    justify-content: flex-end;
+    /* box-shadow: -6px 3px 23px 8px rgba(0, 0, 0, 0.5); */
+    /* border-radius: 15%;  */
+
+}
+
+.b-card * {
+    background-color: rgba(107, 116, 107, 0.6);
+    color: white;
+    border-left: solid 1px white;
+    padding-left: 8px;
+    /* height: 45vh; */
+    display: flex;
+    align-items: self-end;
+}
+
+.book-img {
+    height: 50vh;
+
+}
+
+.next-btn {
+    font-size: xx-large;
+    color: rgb(203, 115, 22);
+    height: 50px;
+    flex-basis: 50px;
+    flex-shrink: 0;
+    border-radius: 30px;
+    margin-top: calc(30vh - 12.5px);
+    background-color: rgba(2, 95, 2, 0.708);
+    border: none;
+}
+
+footer {
+    display: flex;
+    height: 25vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-search {
+    height: 3vh;
+    width: 18vw;
+    outline: none;
+    border-radius: 15px;
+    border-color: aliceblue;
+    color: rgb(4, 27, 46);
+    font-size: larger;
+    font-family: "Poppins";
+}
+
+.search-button {
+    height: 5vh;
+    background-color: #161626;
+    border: 3px;
+    margin: 9px;
+    color: rgb(203, 115, 22);
+}
+
+.clear-button {
+    height: 3vh;
+    background-color: #161626;
+    border: 3px;
+    margin: 9px;
+    color: rgb(203, 115, 22);
+    font-size: large;
+
+}
+
+.svg-icon {
+    width: 3em;
+    height: 3em;
+}
+
+.svg-icon path,
+.svg-icon polygon,
+.svg-icon rect {
+    fill: #f2f5f9;
+}
+
+.svg-icon circle {
+    stroke: #f2f5f9;
+    stroke-width: 3;
+}
